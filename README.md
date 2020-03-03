@@ -1,1 +1,0 @@
-# EA-NIKOLAEVA-mephi-2020-backend
