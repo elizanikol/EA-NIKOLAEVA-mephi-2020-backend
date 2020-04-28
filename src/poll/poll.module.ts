@@ -15,4 +15,4 @@ import {Poll} from '@app/poll/entities/poll.entity';
     PollService,
   ],
 })
-export class UsersModule {}
+export class PollModule {}
