@@ -11,27 +11,27 @@ export class UsersController {
 
   @Post()
   @UsePipes(new ValidationPipe())
-  create(@Body() userDto: UserDto): Promise<UserDto> {
+  async create(@Body() userDto: UserDto): Promise<UserDto> {
     return this.usersService.create(userDto);
   }
 
   @Get()
-  findAll(): Promise<UserDto[]> {
+  async findAll(): Promise<UserDto[]> {
     return this.usersService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string): Promise<UserDto> {
+  async findOne(@Param('id') id: string): Promise<UserDto> {
     return this.usersService.findOne(id);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string): Promise<void> {
+  async remove(@Param('id') id: string): Promise<void> {
     return this.usersService.remove(id);
   }
 
   @Put()
   async update(@Body() user: User): Promise<UpdateResult> {
-    return await this.usersService.update(user);
+    return this.usersService.update(user);
   }
 }

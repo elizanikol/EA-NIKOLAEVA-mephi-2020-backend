@@ -16,10 +16,4 @@ export class Poll {
     length: 255,
   })
   name: string;
-
-  @Column({
-    type: 'varchar',
-    length: 255,
-  })
-  categories: string[];
 }
