@@ -29,8 +29,8 @@ export class UsersService {
     return this.usersRepository.findOne(id);
   }
 
-  async findByName(userName: string): Promise<UserDto> {
-    return this.usersRepository.findOne({userName: userName});
+  async findByEmail(email: string): Promise<UserDto> {
+    return this.usersRepository.findOne({email: email});
   }
 
   async remove(id: string): Promise<void> {

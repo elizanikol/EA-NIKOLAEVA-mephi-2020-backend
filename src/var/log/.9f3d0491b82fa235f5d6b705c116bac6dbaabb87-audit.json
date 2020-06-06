@@ -6,69 +6,24 @@
     "auditLog": "src/var/log/.9f3d0491b82fa235f5d6b705c116bac6dbaabb87-audit.json",
     "files": [
         {
-            "date": 1588017737006,
-            "name": "src/var/log/cc-2020-04-27-23.log",
-            "hash": "f1bac3f014f3d3ce0aa0a63a29dca63f"
+            "date": 1591291402654,
+            "name": "src/var/log/cc-2020-06-04-20.log",
+            "hash": "8841be017b2893a0450e160ceb2238c2"
         },
         {
-            "date": 1588022495447,
-            "name": "src/var/log/cc-2020-04-28-00.log",
-            "hash": "59d846eccdfc72d6cfea9237a8d6c219"
+            "date": 1591453608437,
+            "name": "src/var/log/cc-2020-06-06-17.log",
+            "hash": "7dbd6a197ac819e5a20644302ea0f3b3"
         },
         {
-            "date": 1588024962896,
-            "name": "src/var/log/cc-2020-04-28-01.log",
-            "hash": "d56b9c0bcc8e9d4e93ddc1758d9d3a23"
+            "date": 1591455609611,
+            "name": "src/var/log/cc-2020-06-06-18.log",
+            "hash": "4728b1b125c0fa448c04684f0c3ec97f"
         },
         {
-            "date": 1588028464300,
-            "name": "src/var/log/cc-2020-04-28-02.log",
-            "hash": "d5b1a9920d0e7bc04dce5eeca62b4d5a"
-        },
-        {
-            "date": 1588032324578,
-            "name": "src/var/log/cc-2020-04-28-03.log",
-            "hash": "59453fb19c7e920a610a4bbc8967d5d8"
-        },
-        {
-            "date": 1588035605648,
-            "name": "src/var/log/cc-2020-04-28-04.log",
-            "hash": "06b1914bc1dd24d59f37488027dbf60e"
-        },
-        {
-            "date": 1588039344167,
-            "name": "src/var/log/cc-2020-04-28-05.log",
-            "hash": "ea925af228ec9e288656f25cbf779892"
-        },
-        {
-            "date": 1588058329237,
-            "name": "src/var/log/cc-2020-04-28-10.log",
-            "hash": "b87f00ccd47f2c0826fd31f49c76b238"
-        },
-        {
-            "date": 1588060877795,
-            "name": "src/var/log/cc-2020-04-28-11.log",
-            "hash": "39026b0f3eb9130b36096a4e4ec22ba4"
-        },
-        {
-            "date": 1588064409110,
-            "name": "src/var/log/cc-2020-04-28-12.log",
-            "hash": "f9b32ca6e0f4ab6206a4ffc16521c50f"
-        },
-        {
-            "date": 1588069039830,
-            "name": "src/var/log/cc-2020-04-28-13.log",
-            "hash": "a3996ca8c8c70f64d13fa97854c21b2a"
-        },
-        {
-            "date": 1588074630633,
-            "name": "src/var/log/cc-2020-04-28-14.log",
-            "hash": "66120011fbb74a40d0468bb3b9369d80"
-        },
-        {
-            "date": 1588077770769,
-            "name": "src/var/log/cc-2020-04-28-15.log",
-            "hash": "0f0d3b4a5e3139f7c9efee1ec8db8e0e"
+            "date": 1591459237579,
+            "name": "src/var/log/cc-2020-06-06-19.log",
+            "hash": "7a8dc56928d1ba20c4c8758e707c04c8"
         }
     ]
 }

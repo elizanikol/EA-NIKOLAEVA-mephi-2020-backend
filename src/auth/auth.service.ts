@@ -6,29 +6,26 @@ import {UserDto} from "@app/users/dto/user.dto";
 export class AuthService {
     constructor(private readonly usersService: UsersService) {}
 
-    async signUp(@Body() userDto: UserDto): Promise<string> {
-        if (await this.usersService.findByName(userDto.userName)) {
-            return "such user already exists";
+    async signUp(userDto: UserDto): Promise<string> {
+        if (await this.usersService.findByEmail(userDto.email)) {
+            return "such email already exists";
         }
         await this.usersService.create(userDto);
         return "successfully signed up";
     }
 
-    async verify(userName: string, password: string): Promise<boolean> {
-        const user = await this.usersService.findByName(userName);
-        if (user.password == password) {
-            return true;
-        }
-        return false;
+    async verify(email: string, password: string): Promise<boolean> {
+        const user = await this.usersService.findByEmail(email);
+        return (user.password == password);
     }
 
-    async login(userName: string, password: string): Promise<string> {
-        if (await this.usersService.findByName(userName)) {
-            if (await this.verify(userName, password)) {
+    async login(email: string, password: string): Promise<string> {
+        if (await this.usersService.findByEmail(email)) {
+            if (await this.verify(email, password)) {
                 return "success";
             }
-            return "wrong pair userName/password";
+            return "wrong pair email/password";
         }
-        return "such user name does not exist";
+        return "such username does not exist";
     }
 }
