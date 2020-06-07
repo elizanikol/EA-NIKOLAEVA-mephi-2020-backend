@@ -9,11 +9,29 @@ import {
 })
 export class Poll {
   @PrimaryGeneratedColumn('uuid')
-  id: string;
+  poll_id: string;
 
   @Column({
     type: 'varchar',
     length: 255,
   })
-  name: string;
+  poll_name: string;
+
+  @Column({
+    type: 'varchar',
+    length: 255,
+  })
+  option1: string;
+
+  @Column({
+    type: 'varchar',
+    length: 255,
+  })
+  option2: string;
+
+  @Column({
+    type: 'varchar',
+    length: 255,
+  })
+  option3: string;
 }
