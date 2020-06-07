@@ -1,5 +1,4 @@
 import {IsEmail, IsOptional, IsString, IsUUID, MinLength} from 'class-validator';
-import * as bcrypt from 'bcrypt';
 
 export class UserDto {
   @IsOptional()

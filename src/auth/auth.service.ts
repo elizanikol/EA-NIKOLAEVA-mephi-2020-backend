@@ -1,16 +1,17 @@
 import {Body, Injectable} from '@nestjs/common';
 import {UsersService} from '@app/users/users.service';
-import {UserDto} from "@app/users/dto/user.dto";
+import {SignUpDto} from "@app/auth/dto/signUp.dto";
+import {LoginDto} from "@app/auth/dto/login.dto";
 
 @Injectable()
 export class AuthService {
     constructor(private readonly usersService: UsersService) {}
 
-    async signUp(userDto: UserDto): Promise<string> {
-        if (await this.usersService.findByEmail(userDto.email)) {
+    async signUp(signUpDto: SignUpDto): Promise<string> {
+        if (await this.usersService.findByEmail(signUpDto.email)) {
             return "such email already exists";
         }
-        await this.usersService.create(userDto);
+        await this.usersService.create(signUpDto);
         return "successfully signed up";
     }
 
@@ -19,9 +20,9 @@ export class AuthService {
         return (user.password == password);
     }
 
-    async login(email: string, password: string): Promise<string> {
-        if (await this.usersService.findByEmail(email)) {
-            if (await this.verify(email, password)) {
+    async login(loginDto: LoginDto): Promise<string> {
+        if (await this.usersService.findByEmail(loginDto.email)) {
+            if (await this.verify(loginDto.email, loginDto.password)) {
                 return "success";
             }
             return "wrong pair email/password";

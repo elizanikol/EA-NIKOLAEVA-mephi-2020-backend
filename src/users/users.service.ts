@@ -4,6 +4,7 @@ import { Repository, UpdateResult } from 'typeorm';
 import { User } from './entities/users.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { UserDto } from '@app/users/dto/user.dto';
+import {SignUpDto} from "@app/auth/dto/signUp.dto";
 
 @Injectable()
 export class UsersService {
@@ -12,12 +13,12 @@ export class UsersService {
     private readonly usersRepository: Repository<User>,
   ) {}
 
-  create(userDto: UserDto): Promise<UserDto> {
+  create(signUpDto: SignUpDto): Promise<UserDto> {
     const user = new User();
     user.id = uuidv4();
-    user.userName = userDto.userName;
-    user.email = userDto.email;
-    user.password = userDto.password;
+    user.userName = signUpDto.userName;
+    user.email = signUpDto.email;
+    user.password = signUpDto.password;
     return this.usersRepository.save(user);
   }
 

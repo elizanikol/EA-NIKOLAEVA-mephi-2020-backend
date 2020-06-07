@@ -7,4 +7,8 @@ export class PollDto {
 
   @IsString()
   name: string;
+
+  questions: string [][];
+
+  options: string [];
 }

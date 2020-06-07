@@ -13,7 +13,7 @@ import {ConfigModule} from '@app/config/config.module';
 import {NewsModule} from '@app/news/news.module';
 import {UsersModule} from '@app/users/users.module';
 import {AuthModule} from "@app/auth/auth.module";
-import {PollModule} from "@app/poll/poll.module";
+//import {PollModule} from "@app/poll/poll.module";
 
 const loggerTransports: Transport[] = [
   new DailyRotateFile({
@@ -41,7 +41,7 @@ if (process.env.NODE_ENV === AppEnvironment.DEVELOPMENT) {
     ConfigModule,
     NewsModule,
     UsersModule,
-    PollModule,
+    //PollModule,
     AuthModule,
   ],
 })

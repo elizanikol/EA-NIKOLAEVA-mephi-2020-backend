@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+/*import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import {Repository, UpdateResult} from 'typeorm';
 import { PollDto } from './dto/polls-item.dto';
@@ -34,4 +34,4 @@ export class PollService {
   async update(poll: Poll): Promise<UpdateResult> {
     return await this.pollRepository.update(poll.id, poll);
   }
-}
+}*/

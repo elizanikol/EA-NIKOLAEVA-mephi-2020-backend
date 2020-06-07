@@ -24,6 +24,16 @@
             "date": 1591459237579,
             "name": "src/var/log/cc-2020-06-06-19.log",
             "hash": "7a8dc56928d1ba20c4c8758e707c04c8"
+        },
+        {
+            "date": 1591523465949,
+            "name": "src/var/log/cc-2020-06-07-12.log",
+            "hash": "c4d8bcf61d9ae4b5306cad24a8520115"
+        },
+        {
+            "date": 1591524018894,
+            "name": "src/var/log/cc-2020-06-07-13.log",
+            "hash": "51ea7e4c6bc2cfeb173f427ad8e10bef"
         }
     ]
 }

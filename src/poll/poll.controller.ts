@@ -1,4 +1,4 @@
-import {Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
+/*import {Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
 import { PollDto } from './dto/polls-item.dto';
 import { Poll } from './entities/poll.entity';
 import { PollService } from './poll.service';
@@ -32,4 +32,4 @@ export class PollController {
   async update(@Body() poll: Poll): Promise<UpdateResult> {
     return await this.pollService.update(poll);
   }
-}
+}*/

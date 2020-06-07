@@ -4,6 +4,7 @@ import { UsersService } from './users.service';
 import { UpdateResult } from 'typeorm';
 import { UserDto } from '@app/users/dto/user.dto';
 import {ValidationPipe} from '@app/validation/validation.pipe';
+import {SignUpDto} from "@app/auth/dto/signUp.dto";
 
 @Controller('users')
 export class UsersController {
@@ -11,8 +12,8 @@ export class UsersController {
 
   @Post()
   @UsePipes(new ValidationPipe())
-  async create(@Body() userDto: UserDto): Promise<UserDto> {
-    return this.usersService.create(userDto);
+  async create(@Body() signUpDto: SignUpDto): Promise<UserDto> {
+    return this.usersService.create(signUpDto);
   }
 
   @Get()
